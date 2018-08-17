@@ -32,24 +32,24 @@ public class DijkstraAlgorithm implements ITraversalAlgorithm {
     }
 
     private void traverse_recursively(IGraph graph, String current_node, String target_node) {
-        _visitedNodes.add(current_node);
         INode node = graph.getNode(current_node);
         int current_distance = _distances.get(current_node);
-        for (IWedge wedge : node.getWedges()){
+        for (IWedge wedge : node.getWedges()) {
             String target = wedge.getTarget().getKey();
-            if (!_visitedNodes.contains(target)){
-                int distanceToTarget = wedge.getLength();
-                int new_distance = current_distance + distanceToTarget;
-                if (!_distances.containsKey(target)){
-                    _distances.put(target, new_distance);
-                }
-                else if (_distances.get(target) > new_distance){
-                    _distances.replace(target, new_distance);
-                }
+            int distanceToTarget = wedge.getLength();
+            int new_distance = current_distance + distanceToTarget;
+            if (!_distances.containsKey(target)) {
+                _distances.put(target, new_distance);
+            } else if (_distances.get(target) > new_distance) {
+                _distances.replace(target, new_distance);
             }
         }
+        _visitedNodes.add(current_node);
+        if (visitedAllWedges(graph, target_node)){
+            return;
+        }
         for (IWedge wedge : node.getWedges()){
-            if (!visitedAllWedges(graph, target_node) && !_visitedNodes.contains(wedge.getTarget().getKey())){
+            if (!_visitedNodes.contains(wedge.getTarget().getKey())){
                 traverse_recursively(graph, wedge.getTarget().getKey(), target_node);
             }
         }
