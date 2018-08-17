@@ -24,4 +24,9 @@ public class BasicGraph implements IGraph {
     public INode getNode(String key) {
         return _hash.get(key);
     }
+
+    @Override
+    public Iterable<INode> getAllKeys() {
+        return _hash.values();
+    }
 }
