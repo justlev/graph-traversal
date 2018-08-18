@@ -7,25 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c26bd9c2-2860-4773-96e7-ee4105e7879d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/GraphTraversal_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/algorithms/DijkstraAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/algorithms/DijkstraAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/models/INode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/models/INode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/models/IWedge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/models/implementation/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/models/implementation/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/models/implementation/Wedge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/services/data_providers/FileDataProvider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/GraphTraversal/com/citymapper/traversal/services/data_providers/FileDataProvider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/citymapper/traversal/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/citymapper/traversal/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/citymapper/traversal/algorithms/DijkstraAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/citymapper/traversal/algorithms/DijkstraAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/citymapper/traversal/models/INode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/citymapper/traversal/models/INode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/citymapper/traversal/models/IWedge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/citymapper/traversal/models/IEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/citymapper/traversal/models/implementation/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/citymapper/traversal/models/implementation/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/citymapper/traversal/models/implementation/Wedge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/citymapper/traversal/models/implementation/Edge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/citymapper/traversal/services/data_providers/FileDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/citymapper/traversal/services/data_providers/FileDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/citymapper/traversal/services/data_providers/IDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/citymapper/traversal/services/data_providers/IDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+              <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -49,32 +33,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="345">
-                <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+              <first_editor relative-caret-position="270">
+                <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="run.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/run.sh">
+      <file leaf-file-name="SecureClassLoader.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/.sdkman/candidates/java/current/src.zip!/java/security/SecureClassLoader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="379">
+              <caret line="152" column="58" selection-start-line="152" selection-start-column="58" selection-end-line="152" selection-end-column="58" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ITraversalAlgorithm.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/algorithms/ITraversalAlgorithm.java">
+      <file leaf-file-name="run.sh" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="135">
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -83,7 +67,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/services/data_providers/FileDataProvider.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
-              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,7 +88,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/algorithms/DijkstraAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="412">
-              <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+              <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,7 +109,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/models/INode.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -178,8 +162,8 @@
         <option value="$PROJECT_DIR$/src/com/citymapper/traversal/services/data_providers/IDataProvider.java" />
         <option value="$PROJECT_DIR$/src/com/citymapper/traversal/services/data_providers/FileDataProvider.java" />
         <option value="$PROJECT_DIR$/src/com/citymapper/traversal/Main.java" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/run.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -227,7 +211,7 @@
     <property name="SearchEverywhereHistoryKey" value="node&#9;FILE&#9;file:///Users/levperlman/Projects/CityMapper/GraphTraversal/src/com/citymapper/traversal/models/implementation/Node.java&#10;wed&#9;FILE&#9;file:///Users/levperlman/Projects/CityMapper/GraphTraversal/src/com/citymapper/traversal/models/implementation/Wedge.java&#10;graph&#9;PSI&#9;JAVA://com.citymapper.traversal.models.implementation.BasicGraph" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
@@ -290,7 +274,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9921000" />
+    <option name="totallyTimeSpent" value="10340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -409,13 +393,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/services/data_providers/IDataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/container/DefaultContainer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -750,7 +727,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/algorithms/ITraversalAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -764,7 +741,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/models/INode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -785,7 +762,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/services/data_providers/FileDataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
-          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -795,7 +772,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
+          <caret line="29" column="19" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -805,27 +782,34 @@
     <entry file="file://$PROJECT_DIR$/src/com/citymapper/traversal/algorithms/DijkstraAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
-          <caret line="82" column="21" lean-forward="true" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
+          <caret line="82" column="21" selection-start-line="82" selection-start-column="21" selection-end-line="82" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="345">
-            <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.sdkman/candidates/java/current/src.zip!/java/security/SecureClassLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="152" column="58" selection-start-line="152" selection-start-column="58" selection-end-line="152" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
@@ -871,7 +855,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>9</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

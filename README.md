@@ -1,5 +1,7 @@
 # CityMapper Walking Route Task
 Actually a graph traversal-path-search challenge :)
+<br />
+Project was built using JDK 1.8. Please make sure you have the correct version of Java installed.
 
 
 ## Structure
@@ -15,8 +17,12 @@ It seemed like a perfect fit for this task, since it is exactly the algorithm we
 
 ## To run
 Simply invoke the java program and pass in 3 arguments - the file with the data, the "from" node, and the "to" node.
-
-You can also use the ```run.sh``` to run the program, just like the instruction required.  
+You can also use the ```run.sh``` to run the program, just like the instruction required.
+```./run.sh ./citymapper-coding-test-graph.dat 1524235806 876500321```
+<br />
+<br />
+If for some reason the run.sh script is not working for you, please run it this way:
+```java -jar ./citymapper.jar ./citymapper-coding-test-graph.dat 1524235806 876500321```  
  
 ## What else would I do?
 1. I would add full unit-test and system-test coverage. I didn't, since the task forbids the use of any 3rd party libraries.
