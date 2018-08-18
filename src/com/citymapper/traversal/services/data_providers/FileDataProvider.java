@@ -4,10 +4,11 @@ import com.citymapper.traversal.errors.NotFoundError;
 import com.citymapper.traversal.models.IGraph;
 import com.citymapper.traversal.models.INode;
 import com.citymapper.traversal.models.implementation.BasicGraph;
-import com.citymapper.traversal.models.implementation.Wedge;
+import com.citymapper.traversal.models.implementation.Edge;
 
 import java.io.*;
 
+//Currently, our provider is a file provider.
 public class FileDataProvider implements IDataProvider {
 
     @Override
@@ -15,7 +16,7 @@ public class FileDataProvider implements IDataProvider {
         File file = new File(origin);
         IGraph graph = new BasicGraph();
 
-        BufferedReader br = null;
+        BufferedReader br;
         try {
             br = new BufferedReader(new FileReader(file));
         } catch (FileNotFoundException e) {
@@ -29,7 +30,7 @@ public class FileDataProvider implements IDataProvider {
                 appendNode(graph, splitted[0]);
             }
             else if (splitted.length == 3){
-                appendWedge(graph, splitted[0], splitted[1], Integer.parseInt(splitted[2]));
+                appendEdge(graph, splitted[0], splitted[1], Integer.parseInt(splitted[2]));
             }
         }
         return graph;
@@ -39,10 +40,11 @@ public class FileDataProvider implements IDataProvider {
         graph.addNode(key);
     }
 
-    private void appendWedge(IGraph graph, String from, String to, int length){
+    private void appendEdge(IGraph graph, String from, String to, int length){
         INode origin = graph.getNode(from);
         INode target = graph.getNode(to);
-        origin.addWedge(new Wedge(length, target));
-        target.addWedge(new Wedge(length, origin));
+        //Bi-directional graph, so adding edges to both nodes.
+        origin.addEdge(new Edge(length, target));
+        target.addEdge(new Edge(length, origin));
     }
 }

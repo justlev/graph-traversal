@@ -1,32 +1,27 @@
 package com.citymapper.traversal.models.implementation;
 
 import com.citymapper.traversal.models.INode;
-import com.citymapper.traversal.models.IWedge;
+import com.citymapper.traversal.models.IEdge;
 
 import java.util.ArrayList;
 
 public class Node implements INode {
 
     private final String _key;
-    private final ArrayList<IWedge> _wedges;
+    private final ArrayList<IEdge> _edges;
 
     public Node(String key){
         _key = key;
-        _wedges = new ArrayList<>();
+        _edges = new ArrayList<>();
     }
 
     @Override
-    public String getKey() {
-        return _key;
+    public Iterable<IEdge> getEdges() {
+        return _edges;
     }
 
     @Override
-    public Iterable<IWedge> getWedges() {
-        return _wedges;
-    }
-
-    @Override
-    public void addWedge(IWedge wedge) {
-        _wedges.add(wedge);
+    public void addEdge(IEdge edge) {
+        _edges.add(edge);
     }
 }

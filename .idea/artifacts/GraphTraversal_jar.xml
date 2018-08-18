@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="GraphTraversal:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/GraphTraversal_jar</output-path>
+    <root id="archive" name="GraphTraversal.jar">
+      <element id="module-output" name="GraphTraversal" />
+    </root>
+  </artifact>
+</component>

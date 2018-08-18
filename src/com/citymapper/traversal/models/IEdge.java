@@ -1,6 +1,6 @@
 package com.citymapper.traversal.models;
 
-public interface IWedge {
+public interface IEdge {
     Integer getLength();
     INode getTarget();
 }

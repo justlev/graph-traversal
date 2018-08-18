@@ -1,14 +1,14 @@
 package com.citymapper.traversal.models.implementation;
 
 import com.citymapper.traversal.models.INode;
-import com.citymapper.traversal.models.IWedge;
+import com.citymapper.traversal.models.IEdge;
 
-public class Wedge implements IWedge {
+public class Edge implements IEdge {
 
     private final int _length;
     private final INode _target;
 
-    public Wedge(int length, INode target){
+    public Edge(int length, INode target){
         _length = length;
         _target = target;
     }

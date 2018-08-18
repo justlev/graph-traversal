@@ -1,7 +1,6 @@
 package com.citymapper.traversal.models;
 
 public interface INode {
-    String getKey();
-    Iterable<IWedge> getWedges();
-    void addWedge(IWedge wedge);
+    Iterable<IEdge> getEdges();
+    void addEdge(IEdge edge);
 }

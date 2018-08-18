@@ -2,7 +2,7 @@ package com.citymapper.traversal.algorithms;
 
 import com.citymapper.traversal.models.IGraph;
 import com.citymapper.traversal.models.INode;
-import com.citymapper.traversal.models.IWedge;
+import com.citymapper.traversal.models.IEdge;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -19,49 +19,50 @@ public class DijkstraAlgorithm implements ITraversalAlgorithm {
 
     @Override
     public int findShortestPath(IGraph graph, String from, String to) {
+        // Fill all graph nodes to unvisited list
         for (INode item : graph.getAllKeys()){
             unvisitedNodes.add(item);
         }
+        //Set starting node
         _distances.put(graph.getNode(from), 0);
-        traverse(graph.getNode(to));
-        int result = _distances.get(graph.getNode(to));
 
+        //Traverse until shortest path is found
+        INode targetNode = graph.getNode(to);
+        findShortestPathTo(targetNode);
+
+        //Get shortest length to target node
+        int result = _distances.get(targetNode);
+
+        //Cleanup
         unvisitedNodes.clear();
         _distances.clear();
 
         return result;
     }
 
-    private void traverse(INode target_node) {
-        int i = 0;
-        int lastProgress = 0;
+    private void findShortestPathTo(INode target_node) {
         while (!unvisitedNodes.isEmpty() && unvisitedNodes.contains(target_node)) {
-            int progress = i * 100 / (i + unvisitedNodes.size());
-            reportProgressIfRequired(progress, lastProgress);
-            lastProgress = progress;
-            i++;
-            INode currentItem = getClosestItem(unvisitedNodes);
-            if (currentItem == null) return;
+            INode currentItem = getClosestItem(unvisitedNodes); //Find node with shortest path
+            if (currentItem == null) return; //If not found - no need to continue looking
             unvisitedNodes.remove(currentItem);
-            int currentDistance = _distances.get(currentItem);
-            for (IWedge wedge : currentItem.getWedges()) {
-                INode target = wedge.getTarget();
-                int distanceToTarget = wedge.getLength();
-                int newDistance = currentDistance + distanceToTarget;
+            int currentDistance = _distances.get(currentItem); //get current distance for that node
+            for (IEdge edge : currentItem.getEdges()) {
+                INode target = edge.getTarget();
+                int distanceToTarget = edge.getLength();
+                int newDistance = currentDistance + distanceToTarget; //New distance is distance to current point + distance to target edge
                 if (!_distances.containsKey(target)) {
-                    _distances.put(target, newDistance);
+                    _distances.put(target, newDistance); //If target edge's distance is still not saved - save it
                 } else if (_distances.get(target) > newDistance) {
-                    _distances.replace(target, newDistance);
+                    _distances.replace(target, newDistance); //If new distance is shorter than previous one - replace the previous one.
                 }
             }
         }
-        System.out.println("100%");
     }
 
     private INode getClosestItem(HashSet<INode> nodes){
         INode minItem = null;
         int minDistance = Integer.MAX_VALUE;
-        if (nodes.size() < _distances.size()){
+        if (nodes.size() < _distances.size()){ //Always iterate over shortest collection to save time. Check if key exists in hashmap.
             for (INode node : nodes){
                 if (_distances.containsKey(node)){
                     int distance = _distances.get(node);
@@ -85,11 +86,5 @@ public class DijkstraAlgorithm implements ITraversalAlgorithm {
         }
 
         return minItem;
-    }
-
-    private void reportProgressIfRequired(int progress, int lastProgress){
-        if (progress != lastProgress) {
-            System.out.println(progress + "%");
-        }
     }
 }
